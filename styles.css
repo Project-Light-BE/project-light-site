@@ -1,0 +1,255 @@
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url('assets/fonts/Inter_Medium.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Inter-Medium', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #242424;
+  color: #242424;
+}
+
+.bg-image {
+  position: relative;
+  height: 100vh;
+  background-image: url('assets/bg/bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.client-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.client-logo img {
+  max-height: 40px;
+  margin-right: 10px;
+}
+
+.client-text h2 {
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Inter-Medium', Arial, sans-serif;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: #007bff;
+  border-radius: 5px;
+  font-family: 'Inter-Medium', Arial, sans-serif;
+}
+
+.button:hover {
+  background-color: #a4a4a4;
+}
+
+.button.discord,
+.button.youtube,
+.button.twitter,
+.button.insta {
+  background-color: #e8e8e8;
+}
+
+#r2 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px 50px;
+}
+
+#r2>div {
+  border-radius: 8px;
+  width: 300px;
+  background: #292929;
+  border: 1px solid #1a1d26;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#r2>div>.header {
+  font-weight: 700;
+  color: white;
+  font-family: 'Inter-Medium', Arial, sans-serif;
+}
+
+#r2>div>.description {
+  color: white;
+  font-size: 300;
+  font-family: 'Inter-Medium', Arial, sans-serif;
+}
+
+#r2>div>#hr {
+  width: 50%;
+  background: #191b21;
+  height: 2.5px;
+}
+
+#r2>div>img {
+  height: 60px;
+}
+
+#footer {
+  background-color: #292929;
+  color: white;
+  padding: 20px;
+}
+
+.pl-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-sm-4,
+.col-sm-2 {
+  padding: 10px;
+}
+
+.footer-box {
+  border-bottom: 1px solid #555;
+  padding-bottom: 10px;
+}
+
+.links a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.links a:hover {
+  color: #a4a4a4;
+}
+
+.light-brand p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.light-brand img {
+  margin-right: 10px;
+}
+
+#nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+#nav a {
+  color: white;
+  font-weight: 700;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+#nav a:first-child {
+  margin-left: 0;
+}
+
+#nav a:hover {
+  text-decoration: none;
+}
+
+#nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffd900;
+  transition: width 0.3s;
+}
+
+#nav a:hover::after {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+#nav a:not(:hover)::after {
+  transform: scaleX(0);
+}
+
+.faq-section {
+  background-color: #242424;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-section:hover {
+  background-color: #333;
+}
+
+.faq-content {
+  display: none;
+  padding: 10px;
+  background-color: #242424;
+  color: white;
+}
+
+.faq-section .arrow-icon {
+  font-size: 14px;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.faq-section.open .arrow-icon {
+  transform: rotate(180deg);
+}
+
+.custom-heading {
+  font-size: 24px; 
+  font-weight: bold;
+}
+
+.light-text {
+  color: white;
+}
+
+.custom-heading {
+  color: #ffd900;
+}
+
