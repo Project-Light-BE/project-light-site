@@ -54,6 +54,11 @@ body {
   justify-content: center;
 }
 
+.buttons a {
+  color: white;
+  opacity: 1.0;
+}
+
 .button {
   display: inline-block;
   margin: 5px;
@@ -75,7 +80,7 @@ body {
 .button.youtube,
 .button.twitter,
 .button.insta {
-  background-color: rgba(0.0, 0.0, 0.0, 0.65);
+  background-color: rgba(0, 0, 0, 0.65);
 }
 
 #r2 {
