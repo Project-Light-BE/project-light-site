@@ -1,7 +1,10 @@
-/* General Styles */
 @font-face {
   font-family: 'Inter-Medium';
-  src: url('assets/fonts/Inter_Medium.ttf') format('  Inter-Medium', Arial, sans-serif;
+  src: url('assets/fonts/Inter_Medium.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Inter-Medium', Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #242424;
@@ -48,7 +51,7 @@
 .buttons {
   margin-top: 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 }
 
 .buttons a {
@@ -67,7 +70,6 @@
   background-color: #007bff;
   border-radius: 5px;
   font-family: 'Inter-Medium', Arial, sans-serif;
-  width: 100%;
 }
 
 .button:hover {
@@ -87,11 +89,12 @@
   gap: 7px;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 50px 20px; 
+  margin: 50px 50px;
+}
 
 #r2>div {
   border-radius: 8px;
-  width: calc(100% - 20px); 
+  width: 300px;
   background: #292929;
   border: 1px solid #1a1d26;
   display: flex;
@@ -124,41 +127,27 @@
   height: 60px;
 }
 
-.footer {
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(35, 35, 35);
-    color: rgba(98, 98, 98, 1);
+#footer {
+  background-color: #292929;
+  color: white;
+  padding: 20px;
 }
 
-.footer > .left {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+.pl-footer {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.footer > .left > .title {
-    font-size: 32px;
+.col-sm-4,
+.col-sm-2 {
+  padding: 10px;
 }
 
-.footer > .left > .text {
-    width: 205px;
-    height: 57px;
+.footer-box {
+  border-bottom: 1px solid #555;
+  padding-bottom: 10px;
 }
 
-.footer .links {
-    display: flex;
-    gap: 15px;
-}
-
-.footer .links > .link {
-    display: flex;
-}
-
-.footer .links > .link img {
-    width: 30px;
-}
 .links a {
   display: block;
   color: white;
@@ -269,32 +258,3 @@
   color: #ffd900;
 }
 
-@media only screen and (max-width: 600px) {
-  .bg-image {
-    height: auto;
-  }
-
-  .overlay {
-    top: 40%; 
-  }
-
-  .client-logo {
-    top: 10px; 
-  }
-
-  .buttons {
-    flex-direction: column; 
-  }
-
-  .button {
-    width: 100%; 
-  }
-
-  #r2 {
-    margin: 20px; 
-  }
-
-  #r2>div {
-    width: calc(100% - 20px); 
-  }
-}
