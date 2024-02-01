@@ -1,10 +1,7 @@
+/* General Styles */
 @font-face {
   font-family: 'Inter-Medium';
-  src: url('assets/fonts/Inter_Medium.ttf') format('truetype');
-}
-
-body {
-  font-family: 'Inter-Medium', Arial, sans-serif;
+  src: url('assets/fonts/Inter_Medium.ttf') format('  Inter-Medium', Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #242424;
@@ -51,7 +48,7 @@ body {
 .buttons {
   margin-top: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 .buttons a {
@@ -70,6 +67,7 @@ body {
   background-color: #007bff;
   border-radius: 5px;
   font-family: 'Inter-Medium', Arial, sans-serif;
+  width: 100%;
 }
 
 .button:hover {
@@ -89,12 +87,11 @@ body {
   gap: 7px;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 50px 50px;
-}
+  margin: 50px 20px; 
 
 #r2>div {
   border-radius: 8px;
-  width: 300px;
+  width: calc(100% - 20px); 
   background: #292929;
   border: 1px solid #1a1d26;
   display: flex;
@@ -258,3 +255,32 @@ body {
   color: #ffd900;
 }
 
+@media only screen and (max-width: 600px) {
+  .bg-image {
+    height: auto;
+  }
+
+  .overlay {
+    top: 40%; 
+  }
+
+  .client-logo {
+    top: 10px; 
+  }
+
+  .buttons {
+    flex-direction: column; 
+  }
+
+  .button {
+    width: 100%; 
+  }
+
+  #r2 {
+    margin: 20px; 
+  }
+
+  #r2>div {
+    width: calc(100% - 20px); 
+  }
+}
