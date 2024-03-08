@@ -175,8 +175,9 @@ body {
   color: white;
   font-weight: 700;
   text-decoration: none;
-  padding: 0 20px;
+  padding: 0 15px;
   line-height: 64px;
+  font-family: 'Inter-Medium', Arial, sans-serif; 
 }
 
 #nav a:first-child {
