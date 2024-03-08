@@ -1,88 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Light | FAQ</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Light | FAQ</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
-</head>
-
-<body>
-  <div class="bg-image">
-    <div id="nav">
-      <a style="color:white; font-weight:700;" href="https://projectlight.xyz/">Home</a><a href="https://dsc.gg/projectlight">Download</a>
-    </div>
-    <div class="overlay">
-      <h1 style="font-size:48px;" class="custom-heading">Project <span class="light-text">Light</span></h1>
-      <p>A Texture Pack Client for Minecraft Bedrock Edition.</p>
-      <div class="buttons">
-        <a href="https://dsc.gg/projectlight" class="button discord">Download</a>
-        <a href="https://www.youtube.com/channel/UCJJBbgjGh6ig7yFDGIOCTbA" class="button youtube">YouTube</a>
-        <a href="https://x.com/@_ProjectLight_" class="button twitter">Twitter</a>
-        <a href="https://www.instagram.com/projectlightbe/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
-          class="button insta">Instagram</a>
-      </div>
-    </div>
-    <div class="client-logo">
-      <img src="assets/logo.png" alt="Client Logo">
-      <div class="client-text">
-        <h2 class="custom-heading">Project <span class="light-text">Light</span></h2>
-      </div>
-    </div>
-  </div>
-  <div id="faq">
-    <div class="faq-section" onclick="toggleFAQ('faq1')">
-      <h3>Which devices does Project Light support?</h3>
-      <i class="fas fa-chevron-down arrow-icon"></i>
-    </div>
-    <div class="faq-content" id="faq1">
-      <p>It supports all deveices where you can get Minecraft Bedrock Edition.</p>
-    </div>
-
-    <div class="faq-section" onclick="toggleFAQ('faq2')">
-      <h3>Which versions does Project Light support?</h3>
-      <i class="fas fa-chevron-down arrow-icon"></i>
-    </div>
-    <div class="faq-content" id="faq2">
-      <p>It supports from version 1.20.15 to all above.</p>
-    </div>
-  </div>
-  <footer id="footer">
-    <div class="pl-footer row">
-      <div class="col-sm-4">
-      </div>
-      <div class="col-sm-2">
-        <div class="footer-box">
-          <div class="link-wrapper">
-            <div class="links">
-              <a class="title">Project Light</a>
-              <a href="https://dsc.gg/projectlight">Discord</a>
-              <a href="https://www.youtube.com/channel/UCJJBbgjGh6ig7yFDGIOCTbA">Youtube</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="footer-box copyright no-select">
-          <a class="title">Legal</a>
-          <div class="light-brand">
-            <div class="row">
-              <div class="col-sm-2">
+  <body>
+    <div class="bg-image">
+      <div
+        id="nav"
+        class="sticky top-0 z-10 bg-black backdrop-filter backdrop-blur-lg bg-opacity-10 border-b border-gray-200 firefox:bg-opacity-90"
+      >
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="flex items-center justify-between h-16">
+            <div class="client-logo">
+              <img src="assets/logo.png" alt="Client Logo" />
+              <div class="client-text">
+                <h2 class="custom-heading">
+                  Project <span class="light-text">Light</span>
+                </h2>
               </div>
-              <div class="col-sm-10">
-                <p>© 2023 Copyright Project Light.<br>All Rights Reserved.</p>
+            </div>
+            <div class="nav-button">
+              <div class="flex space-x-4 text-gray-900">
+                <a href="/faq.html" style="color: white; font-weight: 700"
+                  >FAQ</a
+                >
+                <a href="https://dsc.gg/projectlight">Download</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="overlay">
+        <h1 style="font-size: 48px" class="custom-heading">
+          Project <span class="light-text">Light</span>
+        </h1>
+        <p>A Texture Pack Client for Minecraft Bedrock Edition.</p>
+        <div class="buttons">
+          <a href="https://dsc.gg/projectlight" class="button discord"
+            >Download</a
+          >
+          <a
+            href="https://www.youtube.com/channel/UCJJBbgjGh6ig7yFDGIOCTbA"
+            class="button youtube"
+            >YouTube</a
+          >
+          <a href="https://x.com/@_ProjectLight_" class="button twitter"
+            >Twitter</a
+          >
+          <a
+            href="https://www.instagram.com/projectlightbe/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+            class="button insta"
+            >Instagram</a
+          >
+        </div>
+      </div>
     </div>
-  </footer>
-  <script src="script.js"></script>
-</body>
-<script type="text/javascript"> var infolinks_pid = 3414909; var infolinks_wsid = 0; </script> <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
+    <div id="faq">
+      <div class="faq-section" onclick="toggleFAQ('faq1')">
+        <h3>Which devices does Project Light support?</h3>
+        <i class="fas fa-chevron-down arrow-icon"></i>
+      </div>
+      <div class="faq-content" id="faq1">
+        <p>
+          It supports all devices where you can get Minecraft Bedrock Edition.
+        </p>
+      </div>
 
+      <div class="faq-section" onclick="toggleFAQ('faq2')">
+        <h3>Which versions does Project Light support?</h3>
+        <i class="fas fa-chevron-down arrow-icon"></i>
+      </div>
+      <div class="faq-content" id="faq2">
+        <p>It supports from version 1.20.15 to all above.</p>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="pl-footer row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-2">
+          <div class="footer-box">
+            <div class="link-wrapper">
+              <div class="links">
+                <a class="title">Project Light</a>
+                <a href="https://dsc.gg/projectlight">Discord</a>
+                <a
+                  href="https://www.youtube.com/channel/UCJJBbgjGh6ig7yFDGIOCTbA"
+                  >Youtube</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="footer-box copyright no-select">
+            <a class="title">Legal</a>
+            <div class="light-brand">
+              <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-10">
+                  <p>
+                    © 2023 Copyright Project Light.<br />All Rights Reserved.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
