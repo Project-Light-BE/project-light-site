@@ -1,84 +1,123 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Light</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body>
-  <div class="bg-image">
-    <div id="nav">
-    <a style="color:white; font-weight:700;" href="/faq.html">FAQ</a><a href="https://dsc.gg/projectlight">Download</a></div>
-    <div class="overlay">
-      <h1 style="font-size:48px;" class="custom-heading">Project <span class="light-text">Light</span></h1>
-      <p>A Texture Pack Client for Minecraft Bedrock Edition.</p>
-      <div class="buttons">
-        <a href="https://dsc.gg/projectlight" class="button discord">Download</a>
-        <a href="https://www.youtube.com/channel/UCJJBbgjGh6ig7yFDGIOCTbA" class="button youtube">YouTube</a>
-        <a href="https://x.com/@_ProjectLight_" class="button twitter">Twitter</a>
-        <a href="https://www.instagram.com/projectlightbe/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" class="button insta">Instagram</a>
-      </div>
-    </div>
-    <div class="client-logo">
-      <img src="assets/logo.png" alt="Client Logo">
-      <div class="client-text">
-        <h2 class="custom-heading">Project <span class="light-text">Light</span></h2>
-      </div>
-    </div>
-  </div>
-  <div id="r2">
-    <div>
-      <img src="assets/icons/gui.png">
-      <div class="header">Clean UI</div>
-      <div id="hr"></div>
-      <div class="description">A Clean and Minimalistic UI. And toggleable Dark Mode.</div>
-    </div>
-    <div>
-      <img src="assets/icons/modules.png">
-      <div class="header">16+ Modules</div>
-      <div id="hr"></div>
-      <div class="description">Modules that improve Survival and PvP experience.</div>
-    </div>
-    <div>
-      <img src="assets/icons/user.png">
-      <div class="header">User Friendly</div>
-      <div id="hr"></div>
-      <div class="description">Simple and Easy to use so the user doesnt have problems.</div>
-    </div>
-  </div>
-  <footer id="footer">
-    <div class="pl-footer row">
-      <div class="col-sm-4">
-      </div>
-      <div class="col-sm-2">
-        <div class="footer-box">
-          <div class="link-wrapper">
-            <div class="links">
-              <a class="title">Project Light</a>
-              <a href="https://dsc.gg/projectlight">Discord</a>
-              <a href="https://www.youtube.com/channel/UCJJBbgjGh6ig7yFDGIOCTbA">Youtube</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="footer-box copyright no-select">
-          <a class="title">Legal</a>
-          <div class="light-brand">
-            <div class="row">
-              <div class="col-sm-2">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Light</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="bg-image">
+      <div
+        id="nav"
+        class="sticky top-0 z-10 bg-black backdrop-filter backdrop-blur-lg bg-opacity-10 border-b border-gray-200 firefox:bg-opacity-90"
+      >
+        <div class="max-w-5xl mx-auto px-4">
+          <div class="flex items-center justify-between h-16">
+            <div class="client-logo">
+              <img src="assets/logo.png" alt="Client Logo" />
+              <div class="client-text">
+                <h2 class="custom-heading">
+                  Project <span class="light-text">Light</span>
+                </h2>
               </div>
-              <div class="col-sm-10">
-                <p>© 2023 Copyright Project Light.<br>All Rights Reserved.</p>
+            </div>
+            <div class="nav-button">
+              <div class="flex space-x-4 text-gray-900">
+                <a href="/faq.html" style="color: white; font-weight: 700"
+                  >FAQ</a
+                >
+                <a href="https://dsc.gg/projectlight">Download</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="overlay">
+        <h1 style="font-size: 48px" class="custom-heading">
+          Project <span class="light-text">Light</span>
+        </h1>
+        <p>A Texture Pack Client for Minecraft Bedrock Edition.</p>
+        <div class="buttons">
+          <a href="https://dsc.gg/projectlight" class="button discord"
+            >Download</a
+          >
+          <a
+            href="https://www.youtube.com/channel/UCJJBbgjGh6ig7yFDGIOCTbA"
+            class="button youtube"
+            >YouTube</a
+          >
+          <a href="https://x.com/@_ProjectLight_" class="button twitter"
+            >Twitter</a
+          >
+          <a
+            href="https://www.instagram.com/projectlightbe/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
+            class="button insta"
+            >Instagram</a
+          >
+        </div>
+      </div>
     </div>
-  </footer>
-</body>
-<script type="text/javascript"> var infolinks_pid = 3414909; var infolinks_wsid = 0; </script> <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
+    <div id="r2">
+      <div>
+        <img src="assets/icons/gui.png" />
+        <div class="header">Clean UI</div>
+        <div id="hr"></div>
+        <div class="description">
+          A Clean, Dark and Minimalistic UI for the Client
+        </div>
+      </div>
+      <div>
+        <img src="assets/icons/modules.png" />
+        <div class="header">20+ Modules</div>
+        <div id="hr"></div>
+        <div class="description">
+          Modules that improve Survival and PvP experience.
+        </div>
+      </div>
+      <div>
+        <img src="assets/icons/user.png" />
+        <div class="header">User Friendly</div>
+        <div id="hr"></div>
+        <div class="description">
+          Simple and Easy to use so the user doesnt have problems.
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="pl-footer row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-2">
+          <div class="footer-box">
+            <div class="link-wrapper">
+              <div class="links">
+                <a class="title">Project Light</a>
+                <a href="https://dsc.gg/projectlight">Discord</a>
+                <a
+                  href="https://www.youtube.com/channel/UCJJBbgjGh6ig7yFDGIOCTbA"
+                  >Youtube</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="footer-box copyright no-select">
+            <a class="title">Legal</a>
+            <div class="light-brand">
+              <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-10">
+                  <p>
+                    © 2023 Copyright Project Light.<br />All Rights Reserved.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
